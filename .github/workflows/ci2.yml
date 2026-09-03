@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Primeiro passo
+      - name: Testando o Python
         run: python --version
-        run: echo "Olá GitHub Actions!"
+      - name: Feedback
+        run: echo "Python testado com sucesso!"
