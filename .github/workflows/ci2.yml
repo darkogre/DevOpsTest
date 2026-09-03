@@ -9,6 +9,6 @@ jobs:
 
     steps:
       - name: Testando o Python
-        run: python --version
+        run: python teste.py
       - name: Feedback
         run: echo "Python testado com sucesso!"
