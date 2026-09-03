@@ -4,11 +4,17 @@ on:
   push:
 
 jobs:
-  hello:
+  executar-python:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Testando o Python
+      - name: Baixar o código
+        uses: actions/checkout@v6
+
+      - name: Configurar Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+
+      - name: Executar programa Python
         run: python teste.py
-      - name: Feedback
-        run: echo "Python testado com sucesso!"
