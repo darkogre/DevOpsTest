@@ -1,0 +1,13 @@
+name: Hello Python Action
+
+on:
+  push:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Primeiro passo
+        run: python --version
+        run: echo "Olá GitHub Actions!"
